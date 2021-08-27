@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Linkurious/ogma-styles#readme",
   "optionalDependencies": {
-    "@linkurious/ogma": "^4.0.0-PR-2651.3"
+    "@linkurious/ogma": "^4.0.0-PR-2651.4"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.14.5",
