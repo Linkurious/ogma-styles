@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "stripInternal": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ES5", "ES6", "ES2016", "ES2017", "ES2015", "dom"],
+    "outDir": "dist"
+  },
+  "include": ["src", "test"],
+  "exclude": ["node_modules", "dist"]
+}
