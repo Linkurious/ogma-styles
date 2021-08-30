@@ -1,2 +1,2 @@
-export * as theme1 from './theme1';
+export * as midsummernight from './midsumernight';
 export * from './types';

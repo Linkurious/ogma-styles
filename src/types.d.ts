@@ -1,5 +1,5 @@
 declare type MouseWheelEvent = WheelEvent;
-import { NodeAttributesValue, EdgeAttributesValue } from '@linkurious/ogma';
+import { NodeAttributesValue, EdgeAttributesValue, Badge } from '@linkurious/ogma';
 
 export declare interface Theme<ND = any, ED = any> {
   nodeAttributes?: NodeAttributesValue<ND, ED>;
@@ -14,3 +14,7 @@ export declare interface Theme<ND = any, ED = any> {
 export declare type ThemeFactory<ND, ED> = (
   ...args: unknown[]
 ) => Theme<ND, ED>;
+
+
+export declare type BasicTextStyle = Omit<NodeAttributesValue<any,any>["text"], "content">;
+export {Badge}
