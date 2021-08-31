@@ -6,9 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "bump:patch": "bump2version patch && npm version --no-git-tag-version patch",
-    "bump:minor": "bump2version minor && npm version --no-git-tag-version minor",
-    "bump:major": "bump2version major && npm version --no-git-tag-version major"
+    "postversion": "sync_versions"
   },
   "repository": {
     "type": "git",
@@ -31,6 +29,7 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.14.5",
+    "@linkurious/code-tools": "0.0.2",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
