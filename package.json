@@ -5,7 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "bump:patch": "bump2version patch && npm version --no-git-tag-version patch",
+    "bump:minor": "bump2version minor && npm version --no-git-tag-version minor",
+    "bump:major": "bump2version major && npm version --no-git-tag-version major"
   },
   "repository": {
     "type": "git",
@@ -15,7 +18,7 @@
     "ogma"
   ],
   "author": "Linkurious SAS",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Linkurious/ogma-styles/issues"
   },
