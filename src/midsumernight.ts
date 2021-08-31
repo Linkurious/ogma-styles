@@ -1,4 +1,4 @@
-import { Badge, BasicTextStyle, Theme } from './types';
+import { Badge, BasicTextStyle, Pulse, Theme } from './types';
 
 const textDefault: BasicTextStyle = {
   font: 'Helvetica',
@@ -17,7 +17,6 @@ const secondaryTextDefault: BasicTextStyle = {
   margin: 8,
   size: 12
 }
-
 const badgeDefault: Partial<Badge> = {
   color: '#074f67',
   minVisibleSize: 12,
@@ -30,6 +29,14 @@ const badgeDefault: Partial<Badge> = {
     color: '#ffffff',
     content: ''
   },
+}
+const pulseDefault: Pulse = {
+  duration: 1000,
+  endRatio: 4,
+  endColor: "rgba(245, 235, 147, 0)",
+  interval: 8000,
+  startColor: "rgba(239, 168, 75, 0.40)",
+  width: 20
 }
 const selectionColor = '#df162e';
 const hoverColor = selectionColor;
@@ -69,15 +76,7 @@ export const midsummernight: Theme = {
     },
     opacity: 1,
     shape: 'circle',
-    pulse: {
-      duration: 1000,
-      endRatio: 4,
-      endColor: 'rgba(245, 235, 147, 0)',
-      interval: 8000,
-      startRatio: 1,
-      startColor: 'rgba(239, 168, 75, 0.40)',
-      width: 40
-    },
+    pulse: pulseDefault,
     radius: 5,
     text: {
       ...textDefault,
@@ -89,7 +88,7 @@ export const midsummernight: Theme = {
     color: '#23231a',
     halo: {
       color: "#e4ebea",
-      width: 8,
+      width: 0,
     },
     outline: {
       color: "rgba(118, 118, 118, 0.36)",
@@ -99,14 +98,7 @@ export const midsummernight: Theme = {
       minVisibleSize: 0,
       width:2
     },
-    pulse: {
-      duration: 1000,
-      endRatio: 4,
-      endColor: "rgba(245, 235, 147, 0)",
-      interval: 8000,
-      startColor: "rgba(239, 168, 75, 0.40)",
-      width: 20
-    },
+    pulse: pulseDefault,
     text: {
       ...textDefault,
       secondary: secondaryTextDefault,
