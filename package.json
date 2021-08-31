@@ -1,6 +1,6 @@
 {
   "name": "@linkurious/ogma-styles",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Ogma styling themes",
   "main": "dist/index.js",
   "scripts": {
@@ -21,6 +21,9 @@
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Linkurious/ogma-styles/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "homepage": "https://github.com/Linkurious/ogma-styles#readme",
   "optionalDependencies": {
