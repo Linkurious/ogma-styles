@@ -7,7 +7,7 @@
     "test": "jest",
     "build": "tsc",
     "lint": "eslint src",
-    "lint:ci": "eslint -f checkstyle -o reports/checkstyle.xml src/**/*.ts test/**/*.ts",
+    "lint:ci": "eslint -f checkstyle -o reports/checkstyle.xml src/*.ts",
     "postversion": "sync_versions"
   },
   "repository": {
