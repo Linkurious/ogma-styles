@@ -1,8 +1,8 @@
-@Library('linkurious-ogma-styles')_
+@Library('linkurious-shared')_
 
 nodeJob {
   // General
-  projectName = "linkurious/ogma-linkurious-parser"
+  projectName = "linkurious/ogma-styles"
 
   runForwardMerge = true
 
