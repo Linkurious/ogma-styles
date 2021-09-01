@@ -4,8 +4,11 @@
   "description": "Ogma styling themes",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "",
+    "test:unit": "",
     "build": "tsc",
+    "lint": "eslint src",
+    "lint:ci": "eslint -f checkstyle -o reports/checkstyle.xml src/*.ts",
     "postversion": "sync_versions"
   },
   "repository": {
@@ -53,7 +56,7 @@
     "rollup-plugin-terser": "^7.0.2",
     "ts-jest": "^27.0.3",
     "tslib": "^2.3.0",
-    "typescript": "^4.3.4",
+    "typescript": "4.3.5",
     "typings-tester": "^0.3.2"
   },
   "jest": {
