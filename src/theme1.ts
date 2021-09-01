@@ -13,6 +13,7 @@ export const theme: Theme = {
     color: 'blue'
   },
   colors: {
-    background: 'white'
+    background: 'white',
+    primary: 'red'
   }
 };
