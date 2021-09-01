@@ -4,7 +4,8 @@
   "description": "Ogma styling themes",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "",
+    "test:unit": "",
     "build": "tsc",
     "lint": "eslint src",
     "lint:ci": "eslint -f checkstyle -o reports/checkstyle.xml src/*.ts",
