@@ -10,7 +10,16 @@ const colors = {
   background: 'white',
   textBackground: '#e4f2ef',
   haloStroke: '#d4e0de',
-  outline: 'rgba(118, 118, 118, 0.36)'
+  outline: 'rgba(118, 118, 118, 0.36)',
+
+  // color swatches
+  darkorange: '#d55e00',
+  orange: '#e69f00',
+  yellow: '#f0e441',
+  lightgreen: '#019D73',
+  sky: '#57b4e9',
+  blue: '#0072b2',
+  purple: '#c2739f'
 };
 
 const textDefault = {
