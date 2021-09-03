@@ -32,6 +32,19 @@ ogma.styles.setTheme(midsummernight);
 console.log(midsummernight.colors.red); // '#df162e'
 ```
 
+### Additional variables
+
+`midsummer-night` exports several constants for you to apply when you need conditional styling.
+
+```ts
+  edgeOutlineWidth: 2,
+  edgeHaloWidth: 8,
+  nodeHaloWidth: 20,
+
+  // you can also use different colors for the nodes and edges
+  colors: {}
+```
+
 ### Color palette
 
 ![Midsummer night color palette](https://user-images.githubusercontent.com/26884/131863382-9d004b26-2911-4030-9b12-7ea8a33f4b4d.png)
