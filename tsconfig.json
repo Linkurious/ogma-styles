@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "target": "ES6",
     "stripInternal": true,
     "removeComments": false,
     "sourceMap": true,
     "moduleResolution": "node",
-    "module": "UMD",
     "allowSyntheticDefaultImports": true,
     "lib": ["ES5", "ES6", "ES2016", "ES2017", "ES2015", "dom"],
     "outDir": "dist",
