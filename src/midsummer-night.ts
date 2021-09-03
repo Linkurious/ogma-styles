@@ -5,7 +5,7 @@ const colors = {
   emerald: '#3fa291',
   lightgrey: '#e4ebea',
   darkblue: '#074f67',
-  selected: '#0072b2',
+  selected: '#bb3249',
   white: 'white',
   background: 'white',
   textBackground: '#e4f2ef',
@@ -80,8 +80,7 @@ export const midsummernight: Theme = {
     halo: {
       color: colors.lightgrey,
       strokeColor: colors.haloStroke,
-      strokeWidth: 2,
-      width: 0
+      strokeWidth: 2
     },
 
     icon: {
@@ -91,14 +90,15 @@ export const midsummernight: Theme = {
 
     innerStroke: {
       color: colors.white,
-      minVisibleSize: 12,
+      minVisibleSize: 0,
       width: 2
     },
 
     outerStroke: {
       color: colors.darkblue,
       minVisibleSize: 0,
-      width: 5
+      scalingMethod: 'scaled',
+      width: 2
     },
 
     outline: {
@@ -121,8 +121,7 @@ export const midsummernight: Theme = {
     color: '#23231a',
 
     halo: {
-      color: colors.lightgrey,
-      width: 8
+      color: colors.lightgrey
     },
 
     outline: {
@@ -132,7 +131,7 @@ export const midsummernight: Theme = {
     stroke: {
       color: colors.emerald,
       minVisibleSize: 0,
-      width: 2
+      width: 0
     },
 
     pulse: pulseDefault,
@@ -149,10 +148,15 @@ export const midsummernight: Theme = {
 
   selectedNodeAttributes: {
     outerStroke: {
-      color: colors.red
+      color: colors.selected
     }
   },
 
   // export colors
-  colors
+  colors,
+
+  // constants
+  edgeOutlineWidth: 2,
+  edgeHaloWidth: 8,
+  nodeHaloWidth: 20
 };
