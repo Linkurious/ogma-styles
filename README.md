@@ -1,4 +1,4 @@
-# Ogma styles
+# Ogma styles [![](https://data.jsdelivr.com/v1/package/npm/@linkurious/ogma-styles/badge)](https://www.jsdelivr.com/package/npm/@linkurious/ogma-styles)
 
 <!-- Here goes nice image of a style -->
 
