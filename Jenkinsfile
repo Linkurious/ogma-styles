@@ -5,7 +5,7 @@ nodeJob {
   projectName = "linkurious/ogma-styles"
   createGitTag = true
   gitTagPrefix = 'v'
-  runBookeeping = true
+  runBookeeping = false
   runUnitTests = false
   runNpmPublish = true
   runForwardMerge = false
