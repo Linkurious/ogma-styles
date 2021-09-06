@@ -1,26 +1,24 @@
 import { Theme } from './types';
 
 const colors = {
-  nodeColor: '#43a2ca',
-  edgeColor: '#23231a',
-  haloColor: '#c5f5f0',
-  haloStroke: '#b6e5e0',
-  outerStroke: '#267495',
+  nodeColor: '#BD8A61',
+  edgeColor: '#d3d3d3',
+  haloColor: '#e2efff',
+  haloStroke: '#80a3ce',
+  outerStroke: '#34344A',
   innerStroke: '#ffffff',
-  textColor: '#23231a',
+  textColor: '#34344A',
   secondaryTextColor: '#505050',
   textBackground: '#f4f4f4',
-  pulseStart: 'rgba(8, 104, 172, 0.10)',
-  pulseEnd: 'rgba(8, 104, 72, 0.0)',
-  outline: 'rgba(188, 188, 188, 0.50)',
-  badge: '#3FA296',
+  pulseStart: 'rgba(255, 250, 204, 0.80)',
+  pulseEnd: 'rgba(255, 250, 204, 0.00)',
+  outline: 'rgba(116, 116, 116, 0.80)',
+  badge: '#1b998b',
   badgeStrokeColor: '#ffffff',
   badgeTextColor: '#ffffff',
   nodeIcon: '#23231a',
   selected: '#bb3249',
   edgeStroke: '#c5f5f0',
-  edgeHaloColor: '#EAEAEA',
-  edgeOutline: 'rgba(116, 116, 116, 0.80)',
 
   background: 'white',
   nodeOutline: 'rgba(188, 188, 188, 0.50)'
@@ -50,7 +48,7 @@ const badgeDefault = {
   minVisibleSize: 12,
   stroke: {
     color: colors.badgeStrokeColor,
-    width: 4
+    width: 2
   },
   text: {
     ...textDefault,
@@ -65,13 +63,13 @@ const pulseDefault = {
   duration: 1000,
   endRatio: 4,
   endColor: colors.pulseStart,
-  interval: 8000,
+  interval: 5000,
   startColor: colors.pulseEnd,
   width: 20,
   radius: 4
 };
 
-export const morningBreeze: Theme = {
+export const afternoonNap: Theme = {
   nodeAttributes: {
     color: colors.nodeColor,
 
@@ -85,7 +83,7 @@ export const morningBreeze: Theme = {
     halo: {
       color: colors.haloColor,
       strokeColor: colors.haloStroke,
-      strokeWidth: 4
+      strokeWidth: 2
     },
 
     icon: {

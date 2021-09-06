@@ -7,7 +7,7 @@ const toCamelCase = str =>
     .pop()
     .replace(/[-_]([a-z])/g, g => g[1].toUpperCase());
 
-const presets = ['midsummer-night', 'morning-breeze'];
+const presets = ['midsummer-night', 'morning-breeze', 'afternoon-nap'];
 const plugins = [typescript()];
 
 export default [

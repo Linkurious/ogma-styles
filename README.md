@@ -20,16 +20,16 @@ ogma.styles.setTheme(theme);
 
 ```ts
 import Ogma from '@linkurious/ogma';
-import { midsummernight } from '@linkurious/ogma-styles'
+import { midsummerNight as theme } from '@linkurious/ogma-styles'
 
 const ogma = new Ogma({
   ...
 });
 
-ogma.styles.setTheme(midsummernight);
+ogma.styles.setTheme(theme);
 
 // you can also use the theme's colors for your UI
-console.log(midsummernight.colors.red); // '#df162e'
+console.log(theme.colors.red); // '#df162e'
 ```
 
 ### Additional variables
@@ -54,6 +54,44 @@ console.log(midsummernight.colors.red); // '#df162e'
 You can follow the examples in `src` to create your own theme.
 The repositiory uses TypeScript for checking the types of attributes, so you will not get lost. You can always try out your theme in [Ogma playground](https://doc.linkurio.us/ogma/latest/playground/index.html#H4sIAEXkMGEAA31TTW+bQBD9K1N6sJEcSNRLRXCkqo2qXppK9aUqPazZATZddtHu2I5l+b93FjCt3SQXGN68+XozHCISax9lP9lQpDHKImUkPiUNtTpaRKU1hIYYzt98evi4+vHtHoLrrjD5+AbIGxSyt9hukQSUjXAeaVlEG6qu3hcRpOwfGVqZ30D7DtlN+ERp6T0zHGoGPO01+gaRGGocVhOW9LShYDpVzNdW7k+1pdqCkhxRO9E1V6F5oQw6DstTdp54vnSqI/CuZO4w72PInaeDZywypuZqw6Ssx1bh7jsJYqHMRuvj4lK3R3+mmmo76wge6lZA5WwLM8vm7DaIURjmeYKAwBIM7nre/BCqT71nMLuYZlaYY9xnSFMgt4e93TigBluEBh0WJmRMRtV4DavgGtIaK/EDkVPrDaHPoAdDNW1DJYeSswMcF+GJsj4nD7BHjSWh/HqZ69x9/3x0Y7fc40vBo/f/2GnmfrYaWQfeQuKEkbadH/rBmHhzvejbZvPdNRzjkDNhacy8huVdL3VQ5HNQdF7H//jn8UTQghUln1TWlTh/gRQuIdG25C6GbHF8+/qB/D3jsxN5e7HeYSdkuwyueWKAtSWy7elLY0Un26m6mT466xUpazLgP9pqFq6HW+FqxeBACvJW2u4yaJSUaBhkaZ/p+9ciOi1yJdZfwm1H2c3xD/hvzcQwBAAA)
 If you want to share it, send us a pull request and we will check and publish it.
+
+## "Afternoon nap" theme
+
+![Afternoon nap](https://user-images.githubusercontent.com/26884/132239364-aceebad2-466d-44a8-9be2-a21656d06793.png)
+![Afternoon nap with badges](https://user-images.githubusercontent.com/26884/132239390-7abf79ef-f9ad-4c8d-bf1a-3129b4739a33.png)
+
+```ts
+import Ogma from '@linkurious/ogma';
+import { afternoonNap as theme } from '@linkurious/ogma-styles'
+
+const ogma = new Ogma({
+  ...
+});
+
+ogma.styles.setTheme(theme);
+
+// you can also use the theme's constants for your UI
+console.log(theme.colors.nodeHaloWidth); // 40
+```
+
+## "Morning breeze" theme
+
+![Midsummer night](https://user-images.githubusercontent.com/26884/132235154-c09a9a00-8346-469d-a226-0a9e063856c5.png)
+![Midsummer night with halos](https://user-images.githubusercontent.com/26884/132235200-b680e329-c238-4e2c-b099-44a78e1f7857.png)
+
+```ts
+import Ogma from '@linkurious/ogma';
+import { morningBreeze as theme } from '@linkurious/ogma-styles'
+
+const ogma = new Ogma({
+  ...
+});
+
+ogma.styles.setTheme(theme);
+
+// you can also use the theme's constants for your UI
+console.log(theme.colors.nodeHaloWidth); // 40
+```
 
 ## Copyright
 
