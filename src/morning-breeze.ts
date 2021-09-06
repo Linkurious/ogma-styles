@@ -1,35 +1,38 @@
 import { Theme } from './types';
 
 const colors = {
-  nodeColor: '#3fa291',
-  white: 'white',
-  background: 'white',
-  textBackground: '#e4f2ef',
-  haloStroke: '#d4e0de',
-  outline: 'rgba(118, 118, 118, 0.36)',
-
-  // color swatches
-  darkorange: '#d55e00',
-  orange: '#e69f00',
-  yellow: '#f0e441',
-  lightgreen: '#019D73',
-  sky: '#57b4e9',
-  blue: '#0072b2',
-  purple: '#c2739f',
+  nodeColor: '#43a2ca',
+  edgeColor: '#23231a',
+  haloColor: '#c5f5f0',
+  haloStroke: '#b6e5e0',
+  outerStroke: '#267495',
+  innerStroke: '#ffffff',
+  textColor: '#23231a',
+  secondaryTextColor: '#505050',
+  textBackground: '#f4f4f4',
+  pulseStart: 'rgba(8, 104, 172, 0.10)',
+  pulseEnd: 'rgba(8, 104, 72, 0.0)',
+  outline: 'rgba(188, 188, 188, 0.50)',
+  badge: '#3FA296',
+  badgeStrokeColor: '#ffffff',
+  badgeTextColor: '#ffffff',
+  nodeIcon: '#23231a',
   selected: '#bb3249',
-  red: '#df162e',
-  emerald: '#3fa291',
-  lightgrey: '#e4ebea',
-  darkblue: '#074f67'
+  edgeStroke: '#c5f5f0',
+  edgeHaloColor: '#EAEAEA',
+  edgeOutline: 'rgba(116, 116, 116, 0.80)',
+
+  background: 'white',
+  nodeOutline: 'rgba(188, 188, 188, 0.50)'
 };
 
 const textDefault = {
   font: 'Helvetica',
-  color: '#23231a',
+  color: colors.textColor,
   backgroundColor: colors.textBackground,
   size: 16,
-  margin: 5,
-  padding: 6,
+  margin: 12,
+  padding: 8,
   scale: 0.1,
   content: ''
 };
@@ -37,23 +40,23 @@ const textDefault = {
 const secondaryTextDefault = {
   ...textDefault,
   backgroundColor: colors.textBackground,
-  color: '#23231a',
+  color: colors.secondaryTextColor,
   margin: 8,
   size: 12
 };
 
 const badgeDefault = {
-  color: colors.darkblue,
+  color: colors.badge,
   minVisibleSize: 12,
   stroke: {
-    color: colors.background,
-    width: 2
+    color: colors.badgeStrokeColor,
+    width: 4
   },
   text: {
     ...textDefault,
     scale: 0.5,
     margin: 0,
-    color: colors.white,
+    color: colors.badgeTextColor,
     content: ''
   }
 };
@@ -61,15 +64,16 @@ const badgeDefault = {
 const pulseDefault = {
   duration: 1000,
   endRatio: 4,
-  endColor: 'rgba(245, 235, 147, 0)',
+  endColor: colors.pulseStart,
   interval: 8000,
-  startColor: 'rgba(239, 168, 75, 0.40)',
-  width: 20
+  startColor: colors.pulseEnd,
+  width: 20,
+  radius: 4
 };
 
-export const midsummerNight: Theme = {
+export const morningBreeze: Theme = {
   nodeAttributes: {
-    color: colors.emerald,
+    color: colors.nodeColor,
 
     badges: {
       topLeft: badgeDefault,
@@ -79,27 +83,27 @@ export const midsummerNight: Theme = {
     },
 
     halo: {
-      color: colors.lightgrey,
+      color: colors.haloColor,
       strokeColor: colors.haloStroke,
-      strokeWidth: 2
+      strokeWidth: 4
     },
 
     icon: {
-      color: '#23231a',
+      color: colors.nodeIcon,
       scale: 0.7
     },
 
     innerStroke: {
-      color: colors.white,
+      color: colors.innerStroke,
       minVisibleSize: 0,
-      width: 2
+      width: 4
     },
 
     outerStroke: {
-      color: colors.darkblue,
+      color: colors.outerStroke,
       minVisibleSize: 0,
       scalingMethod: 'scaled',
-      width: 2
+      width: 4
     },
 
     outline: {
@@ -119,10 +123,10 @@ export const midsummerNight: Theme = {
   },
 
   edgeAttributes: {
-    color: '#23231a',
+    color: colors.edgeColor,
 
     halo: {
-      color: colors.lightgrey
+      color: colors.haloColor
     },
 
     outline: {
@@ -130,9 +134,9 @@ export const midsummerNight: Theme = {
     },
 
     stroke: {
-      color: colors.emerald,
+      color: colors.edgeStroke,
       minVisibleSize: 0,
-      width: 0
+      width: 2
     },
 
     pulse: pulseDefault,
@@ -159,5 +163,5 @@ export const midsummerNight: Theme = {
   // constants
   edgeOutlineWidth: 2,
   edgeHaloWidth: 8,
-  nodeHaloWidth: 20
+  nodeHaloWidth: 40
 };
