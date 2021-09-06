@@ -1,25 +1,34 @@
-import { main } from './package.json';
+import { main, name } from './package.json';
 import typescript from '@rollup/plugin-typescript';
 
+const toCamelCase = str =>
+  str
+    .split('/')
+    .pop()
+    .replace(/[-_]([a-z])/g, g => g[1].toUpperCase());
+
+const presets = ['midsummer-night', 'morning-breeze'];
+const plugins = [typescript()];
+
 export default [
-  {
-    input: 'src/midsummer-night.ts',
+  ...presets.map(preset => ({
+    input: `src/${preset}.ts`,
     output: {
-      file: 'dist/midsummer-night.js',
+      file: `dist/${preset}.js`,
       format: 'umd',
-      name: 'theme',
+      name: toCamelCase(preset),
       sourcemap: true
     },
-    plugins: [typescript()]
-  },
+    plugins
+  })),
   {
     input: 'src/index.ts',
     output: {
       file: main,
       format: 'umd',
-      name: 'themes',
+      name: toCamelCase(name),
       sourcemap: true
     },
-    plugins: [typescript()]
+    plugins
   }
 ];
