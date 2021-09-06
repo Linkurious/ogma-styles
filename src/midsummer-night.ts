@@ -1,6 +1,7 @@
 import { Theme } from './types';
 
 const colors = {
+  nodeColor: '#3fa291',
   white: 'white',
   background: 'white',
   textBackground: '#e4f2ef',

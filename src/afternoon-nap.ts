@@ -101,7 +101,7 @@ export const afternoonNap: Theme = {
       color: colors.outerStroke,
       minVisibleSize: 0,
       scalingMethod: 'scaled',
-      width: 4
+      width: 0
     },
 
     outline: {
@@ -134,7 +134,7 @@ export const afternoonNap: Theme = {
     stroke: {
       color: colors.edgeStroke,
       minVisibleSize: 0,
-      width: 2
+      width: 0
     },
 
     pulse: pulseDefault,
@@ -160,6 +160,8 @@ export const afternoonNap: Theme = {
 
   // constants
   edgeOutlineWidth: 2,
+  edgeStrokeWidth: 2,
   edgeHaloWidth: 8,
-  nodeHaloWidth: 40
+  nodeHaloWidth: 40,
+  nodeOuterStroke: 4
 };

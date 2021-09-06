@@ -4,11 +4,13 @@
 
 This is a repositiory of style presets for [Ogma graph visualisation library](https://ogma.linkurio.us). You can use them in your prototypes and applications.
 
+[Demo](http://ogma.linkurio.us/latest/examples/set-theme/)
+
 ## How to use
 
 ```ts
 import Ogma from '@linkurious/ogma';
-import { theme } from '@linkurious/ogma-styles'
+import { midsummerNight as theme } from '@linkurious/ogma-styles'
 
 const ogma = new Ogma({ ... });
 ogma.styles.setTheme(theme);
