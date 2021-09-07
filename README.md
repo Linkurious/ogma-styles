@@ -8,6 +8,27 @@ This is a repositiory of style presets for [Ogma graph visualisation library](ht
 
 ## How to use
 
+### Install
+
+```
+npm install -S @linkurious/ogma-styles
+# or
+yarn add @linkurious/ogma-styles
+```
+
+Alternatively, you can use the CDN-hosted version
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@linkurious/ogma-styles@0.0.4/dist/index.min.js"></script>
+...
+<script>
+  // themes are globally exposed as `ogmaStyles`
+  const themes = ogmaStyles;
+</script>
+```
+
+### Usage
+
 ```ts
 import Ogma from '@linkurious/ogma';
 import { midsummerNight as theme } from '@linkurious/ogma-styles'
