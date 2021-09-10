@@ -4,7 +4,7 @@
 
 This is a repositiory of style presets for [Ogma graph visualisation library](https://ogma.linkurio.us). You can use them in your prototypes and applications.
 
-[Demo](http://ogma.linkurio.us/latest/examples/set-theme/)
+[Demo](https://doc.linkurio.us/ogma/latest/examples/set-theme.html)
 
 ## How to use
 
