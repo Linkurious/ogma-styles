@@ -4,9 +4,30 @@
 
 This is a repositiory of style presets for [Ogma graph visualisation library](https://ogma.linkurio.us). You can use them in your prototypes and applications.
 
-[Demo](http://ogma.linkurio.us/latest/examples/set-theme/)
+[Demo](https://doc.linkurio.us/ogma/latest/examples/set-theme.html)
 
 ## How to use
+
+### Install
+
+```
+npm install -S @linkurious/ogma-styles
+# or
+yarn add @linkurious/ogma-styles
+```
+
+Alternatively, you can use the CDN-hosted version
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@linkurious/ogma-styles@0.0.4/dist/index.min.js"></script>
+...
+<script>
+  // themes are globally exposed as `ogmaStyles`
+  const themes = ogmaStyles;
+</script>
+```
+
+### Usage
 
 ```ts
 import Ogma from '@linkurious/ogma';
