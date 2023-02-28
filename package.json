@@ -8,6 +8,9 @@
     "dist",
     "src"
   ],
+  "engines": {
+    "node": "18.14.2"
+  },
   "scripts": {
     "test": "",
     "test:unit": "",
