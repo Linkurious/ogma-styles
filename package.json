@@ -1,6 +1,6 @@
 {
   "name": "@linkurious/ogma-styles",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Ogma styling themes",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,6 +8,9 @@
     "dist",
     "src"
   ],
+  "engines": {
+    "node": "18.14.2"
+  },
   "scripts": {
     "test": "",
     "test:unit": "",
@@ -38,65 +41,25 @@
   },
   "homepage": "https://github.com/Linkurious/ogma-styles#readme",
   "optionalDependencies": {
-    "@linkurious/ogma": "^4.0.0-develop.115"
+    "@linkurious/ogma": "^4.0.0"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.14.5",
-    "@linkurious/code-tools": "0.0.2",
+    "@linkurious/code-tools": "0.0.12",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-typescript": "^8.2.5",
-    "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
-    "babel-jest": "^27.0.6",
-    "cross-env": "^7.0.3",
     "eslint": "^7.29.0",
     "eslint-config-airbnb-typescript-prettier": "^4.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^7.0.0",
-    "jest": "^27.0.6",
-    "jest-junit": "^12.2.0",
-    "js-beautify": "^1.14.0",
-    "lint-staged": "^11.0.0",
     "prettier": "^2.3.1",
     "rollup": "^2.56.3",
     "rollup-plugin-terser": "^7.0.2",
-    "ts-jest": "^27.0.3",
-    "tslib": "^2.3.0",
-    "typescript": "4.3.5",
-    "typings-tester": "^0.3.2"
-  },
-  "jest": {
-    "globals": {
-      "ts-jest": {
-        "tsConfig": "tsconfig.json"
-      }
-    },
-    "transform": {
-      "\\.(js|jsx|ts|tsx)$": "ts-jest"
-    },
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "ts",
-      "tsx",
-      "json"
-    ],
-    "testRegex": "/(test|__tests__)/.*\\.(test|spec)\\.tsx?",
-    "setupFiles": [
-      "<rootDir>/test/jest.setup.ts"
-    ],
-    "coverageReporters": [
-      "text",
-      "cobertura"
-    ],
-    "coverageDirectory": "reports"
-  },
-  "jest-junit": {
-    "outputFile": "reports/junit-test-results.xml"
+    "typescript": "4.3.5"
   },
   "prettier": {
     "trailingComma": "none",
