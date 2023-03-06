@@ -3,6 +3,7 @@
 nodeJob {
   // General
   projectName = "linkurious/ogma-styles"
+  podTemplateNames = ['jnlp-agent-node']  
   createGitTag = true
   gitTagPrefix = 'v'
   runBookeeping = false
