@@ -1,6 +1,6 @@
 {
   "name": "@linkurious/ogma-styles",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Ogma styling themes",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/Linkurious/ogma-styles#readme",
   "optionalDependencies": {
-    "@linkurious/ogma": "^4.0.0"
+    "@linkurious/ogma": "^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.14.5",
