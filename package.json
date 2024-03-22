@@ -2,12 +2,34 @@
   "name": "@linkurious/ogma-styles",
   "version": "0.0.8",
   "description": "Ogma styling themes",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
+  "browser": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./midsummer-night": {
+      "import": "./dist/midsummer-night.mjs",
+      "require": "./dist/midsummer-night.js",
+      "types": "./dist/midsummer-night.d.ts"
+    },
+    "./afternoon-nap": {
+      "import": "./dist/afternoon-nap.mjs",
+      "require": "./dist/afternoon-nap.js",
+      "types": "./dist/afternoon-nap.d.ts"
+    },
+    "./morning-breeze": {
+      "import": "./dist/morning-breeze.mjs",
+      "require": "./dist/morning-breeze.js",
+      "types": "./dist/morning-breeze.d.ts"
+    }
+  },
   "engines": {
     "node": "18.14.2"
   },
@@ -46,20 +68,20 @@
   "devDependencies": {
     "@babel/preset-typescript": "^7.14.5",
     "@linkurious/code-tools": "0.0.12",
+    "@linkurious/eslint-config-ogma": "^1.0.10",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-typescript": "^8.2.5",
-    "@typescript-eslint/eslint-plugin": "^4.28.0",
-    "@typescript-eslint/parser": "^4.28.0",
-    "eslint": "^7.29.0",
-    "eslint-config-airbnb-typescript-prettier": "^4.2.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.3.1",
+    "eslint": "^8.57.0",
     "rollup": "^2.56.3",
     "rollup-plugin-terser": "^7.0.2",
     "typescript": "5.4.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@linkurious/eslint-config-ogma"
+    ]
   },
   "prettier": {
     "trailingComma": "none",
