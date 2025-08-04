@@ -11,27 +11,25 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     },
     "./midsummer-night": {
+      "types": "./dist/midsummer-night.d.ts",
       "import": "./dist/midsummer-night.mjs",
-      "require": "./dist/midsummer-night.js",
-      "types": "./dist/midsummer-night.d.ts"
+      "require": "./dist/midsummer-night.js"
     },
     "./afternoon-nap": {
+      "types": "./dist/afternoon-nap.d.ts",
       "import": "./dist/afternoon-nap.mjs",
-      "require": "./dist/afternoon-nap.js",
-      "types": "./dist/afternoon-nap.d.ts"
+      "require": "./dist/afternoon-nap.js"
     },
     "./morning-breeze": {
+      "types": "./dist/morning-breeze.d.ts",
       "import": "./dist/morning-breeze.mjs",
-      "require": "./dist/morning-breeze.js",
-      "types": "./dist/morning-breeze.d.ts"
+      "require": "./dist/morning-breeze.js"
     }
-  },
-  "engines": {
-    "node": "18.14.2"
   },
   "scripts": {
     "test": "",
@@ -67,7 +65,7 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.14.5",
-    "@linkurious/code-tools": "0.0.12",
+    "@linkurious/code-tools": "0.0.15",
     "@linkurious/eslint-config-ogma": "^1.0.10",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-json": "^4.1.0",

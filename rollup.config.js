@@ -1,5 +1,5 @@
-import { main, browser, name, license, description } from './package.json';
 import typescript from '@rollup/plugin-typescript';
+import { main, browser, name, license, description } from './package.json';
 
 const toCamelCase = str =>
   str
@@ -19,35 +19,37 @@ const banner = `
 `;
 
 export default [
-  ...presets.map(preset => {
-    const input = `src/${preset}.ts`;
-    const name = toCamelCase(preset);
-    const sourcemap = true;
-    return [
-      {
-        input,
-        output: {
-          file: `dist/${preset}.mjs`,
-          format: 'esm',
-          banner,
-          name,
-          sourcemap
+  ...presets
+    .map(preset => {
+      const input = `src/${preset}.ts`;
+      const name = toCamelCase(preset);
+      const sourcemap = true;
+      return [
+        {
+          input,
+          output: {
+            file: `dist/${preset}.mjs`,
+            format: 'esm',
+            banner,
+            name,
+            sourcemap
+          },
+          plugins
         },
-        plugins
-      },
-      {
-        input,
-        output: {
-          file: `dist/${preset}.js`,
-          format: 'umd',
-          banner,
-          name,
-          sourcemap
-        },
-        plugins
-      }
-    ];
-  }).flat(),
+        {
+          input,
+          output: {
+            file: `dist/${preset}.js`,
+            format: 'umd',
+            banner,
+            name,
+            sourcemap
+          },
+          plugins
+        }
+      ];
+    })
+    .flat(),
   {
     input: 'src/index.ts',
     output: {
