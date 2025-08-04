@@ -39,7 +39,8 @@
     "lint": "eslint src",
     "types": "tsc -p tsconfig.json --emitDeclarationOnly",
     "lint:ci": "eslint -f checkstyle -o reports/checkstyle.xml src/*.ts",
-    "postversion": "sync_versions"
+    "postversion": "sync_versions",
+    "bump:patch": "npm version --no-git-tag-version patch"
   },
   "repository": {
     "type": "git",
