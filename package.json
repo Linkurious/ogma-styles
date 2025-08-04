@@ -1,6 +1,6 @@
 {
   "name": "@linkurious/ogma-styles",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Ogma styling themes",
   "main": "dist/index.mjs",
   "browser": "dist/index.js",
