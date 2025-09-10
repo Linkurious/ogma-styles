@@ -244,4 +244,4 @@ console.log(categorical24.length); // 24
 
 ## Copyright
 
-Linkurious SAS &copy; 2021
+Linkurious SAS &copy; 2025
