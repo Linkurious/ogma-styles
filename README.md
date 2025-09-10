@@ -123,141 +123,57 @@ The package includes a collection of carefully selected color palettes for data 
 ### Available Color Schemes
 
 #### **categorical** - 9 distinct colors for basic categorical data
-<svg width="360" height="30">
-  <rect x="0" y="0" width="40" height="30" fill="#44AA99"/>
-  <rect x="40" y="0" width="40" height="30" fill="#FFCB2F"/>
-  <rect x="80" y="0" width="40" height="30" fill="#FF7523"/>
-  <rect x="120" y="0" width="40" height="30" fill="#FF9AAC"/>
-  <rect x="160" y="0" width="40" height="30" fill="#80E5CA"/>
-  <rect x="200" y="0" width="40" height="30" fill="#0099FF"/>
-  <rect x="240" y="0" width="40" height="30" fill="#1450DD"/>
-  <rect x="280" y="0" width="40" height="30" fill="#9386CE"/>
-  <rect x="320" y="0" width="40" height="30" fill="#617083"/>
-</svg>
+```
+#44AA99  #FFCB2F  #FF7523  #FF9AAC  #80E5CA  #0099FF  #1450DD  #9386CE  #617083
+```
 
 #### **categorical16** - 16 colors for larger categorical datasets
-<svg width="640" height="30">
-  <rect x="0" y="0" width="40" height="30" fill="#44AA99"/>
-  <rect x="40" y="0" width="40" height="30" fill="#FFCB2F"/>
-  <rect x="80" y="0" width="40" height="30" fill="#FF7523"/>
-  <rect x="120" y="0" width="40" height="30" fill="#FF9AAC"/>
-  <rect x="160" y="0" width="40" height="30" fill="#80E5CA"/>
-  <rect x="200" y="0" width="40" height="30" fill="#0099FF"/>
-  <rect x="240" y="0" width="40" height="30" fill="#1450DD"/>
-  <rect x="280" y="0" width="40" height="30" fill="#9386CE"/>
-  <rect x="320" y="0" width="40" height="30" fill="#617083"/>
-  <rect x="360" y="0" width="40" height="30" fill="#E74C3C"/>
-  <rect x="400" y="0" width="40" height="30" fill="#2ECC71"/>
-  <rect x="440" y="0" width="40" height="30" fill="#F39C12"/>
-  <rect x="480" y="0" width="40" height="30" fill="#8E44AD"/>
-  <rect x="520" y="0" width="40" height="30" fill="#34495E"/>
-  <rect x="560" y="0" width="40" height="30" fill="#16A085"/>
-  <rect x="600" y="0" width="40" height="30" fill="#D35400"/>
-</svg>
+```
+#44AA99  #FFCB2F  #FF7523  #FF9AAC  #80E5CA  #0099FF  #1450DD  #9386CE
+#617083  #E74C3C  #2ECC71  #F39C12  #8E44AD  #34495E  #16A085  #D35400
+```
 
 #### **categorical24** - 24 colors for extensive categorical data
-<svg width="600" height="60">
-  <rect x="0" y="0" width="25" height="30" fill="#44AA99"/>
-  <rect x="25" y="0" width="25" height="30" fill="#FFCB2F"/>
-  <rect x="50" y="0" width="25" height="30" fill="#FF7523"/>
-  <rect x="75" y="0" width="25" height="30" fill="#FF9AAC"/>
-  <rect x="100" y="0" width="25" height="30" fill="#80E5CA"/>
-  <rect x="125" y="0" width="25" height="30" fill="#0099FF"/>
-  <rect x="150" y="0" width="25" height="30" fill="#1450DD"/>
-  <rect x="175" y="0" width="25" height="30" fill="#9386CE"/>
-  <rect x="200" y="0" width="25" height="30" fill="#617083"/>
-  <rect x="225" y="0" width="25" height="30" fill="#E74C3C"/>
-  <rect x="250" y="0" width="25" height="30" fill="#2ECC71"/>
-  <rect x="275" y="0" width="25" height="30" fill="#F39C12"/>
-  <rect x="300" y="0" width="25" height="30" fill="#8E44AD"/>
-  <rect x="325" y="0" width="25" height="30" fill="#34495E"/>
-  <rect x="350" y="0" width="25" height="30" fill="#16A085"/>
-  <rect x="375" y="0" width="25" height="30" fill="#D35400"/>
-  <rect x="400" y="0" width="25" height="30" fill="#27AE60"/>
-  <rect x="425" y="0" width="25" height="30" fill="#E67E22"/>
-  <rect x="450" y="0" width="25" height="30" fill="#9B59B6"/>
-  <rect x="475" y="0" width="25" height="30" fill="#3498DB"/>
-  <rect x="500" y="0" width="25" height="30" fill="#F1C40F"/>
-  <rect x="525" y="0" width="25" height="30" fill="#E91E63"/>
-  <rect x="0" y="30" width="25" height="30" fill="#00BCD4"/>
-  <rect x="25" y="30" width="25" height="30" fill="#795548"/>
-</svg>
+```
+#44AA99  #FFCB2F  #FF7523  #FF9AAC  #80E5CA  #0099FF  #1450DD  #9386CE
+#617083  #E74C3C  #2ECC71  #F39C12  #8E44AD  #34495E  #16A085  #D35400
+#27AE60  #E67E22  #9B59B6  #3498DB  #F1C40F  #E91E63  #00BCD4  #795548
+```
 
 #### **contrastLight** - Paul Tol's bright color scheme (7 colors)
-<svg width="280" height="30">
-  <rect x="0" y="0" width="40" height="30" fill="#4477AA"/>
-  <rect x="40" y="0" width="40" height="30" fill="#66CCEE"/>
-  <rect x="80" y="0" width="40" height="30" fill="#228833"/>
-  <rect x="120" y="0" width="40" height="30" fill="#CCBB44"/>
-  <rect x="160" y="0" width="40" height="30" fill="#EE6677"/>
-  <rect x="200" y="0" width="40" height="30" fill="#AA3377"/>
-  <rect x="240" y="0" width="40" height="30" fill="#BBBBBB"/>
-</svg>
+```
+#4477AA  #66CCEE  #228833  #CCBB44  #EE6677  #AA3377  #BBBBBB
+```
 
 #### **highContrast** - Paul Tol's high-contrast scheme (4 colors)
-<svg width="160" height="30">
-  <rect x="0" y="0" width="40" height="30" fill="#DDAA33"/>
-  <rect x="40" y="0" width="40" height="30" fill="#BB5566"/>
-  <rect x="80" y="0" width="40" height="30" fill="#004488"/>
-  <rect x="120" y="0" width="40" height="30" fill="#000000"/>
-</svg>
+```
+#DDAA33  #BB5566  #004488  #000000
+```
 
 #### **vibrant** - Paul Tol's vibrant color scheme (7 colors)
-<svg width="280" height="30">
-  <rect x="0" y="0" width="40" height="30" fill="#0077BB"/>
-  <rect x="40" y="0" width="40" height="30" fill="#33BBEE"/>
-  <rect x="80" y="0" width="40" height="30" fill="#009988"/>
-  <rect x="120" y="0" width="40" height="30" fill="#EE7733"/>
-  <rect x="160" y="0" width="40" height="30" fill="#CC3311"/>
-  <rect x="200" y="0" width="40" height="30" fill="#EE3377"/>
-  <rect x="240" y="0" width="40" height="30" fill="#BBBBBB"/>
-</svg>
+```
+#0077BB  #33BBEE  #009988  #EE7733  #CC3311  #EE3377  #BBBBBB
+```
 
 #### **muted** - Paul Tol's muted color scheme (9 colors)
-<svg width="360" height="30">
-  <rect x="0" y="0" width="40" height="30" fill="#332288"/>
-  <rect x="40" y="0" width="40" height="30" fill="#88CCEE"/>
-  <rect x="80" y="0" width="40" height="30" fill="#44AA99"/>
-  <rect x="120" y="0" width="40" height="30" fill="#117733"/>
-  <rect x="160" y="0" width="40" height="30" fill="#999933"/>
-  <rect x="200" y="0" width="40" height="30" fill="#DDCC77"/>
-  <rect x="240" y="0" width="40" height="30" fill="#CC6677"/>
-  <rect x="280" y="0" width="40" height="30" fill="#882255"/>
-  <rect x="320" y="0" width="40" height="30" fill="#AA4499"/>
-</svg>
+```
+#332288  #88CCEE  #44AA99  #117733  #999933  #DDCC77  #CC6677  #882255  #AA4499
+```
 
 #### **mediumContrast** - Paul Tol's medium contrast scheme (7 colors)
-<svg width="280" height="30">
-  <rect x="0" y="0" width="40" height="30" fill="#EECC66"/>
-  <rect x="40" y="0" width="40" height="30" fill="#EE99AA"/>
-  <rect x="80" y="0" width="40" height="30" fill="#6699CC"/>
-  <rect x="120" y="0" width="40" height="30" fill="#997700"/>
-  <rect x="160" y="0" width="40" height="30" fill="#994455"/>
-  <rect x="200" y="0" width="40" height="30" fill="#004488"/>
-  <rect x="240" y="0" width="40" height="30" fill="#000000"/>
-</svg>
+```
+#EECC66  #EE99AA  #6699CC  #997700  #994455  #004488  #000000
+```
 
 #### **pale** - Paul Tol's pale color scheme (6 colors)
-<svg width="240" height="30">
-  <rect x="0" y="0" width="40" height="30" fill="#BBCCEE"/>
-  <rect x="40" y="0" width="40" height="30" fill="#CCEEFF"/>
-  <rect x="80" y="0" width="40" height="30" fill="#CCDDAA"/>
-  <rect x="120" y="0" width="40" height="30" fill="#EEEEBB"/>
-  <rect x="160" y="0" width="40" height="30" fill="#FFCCCC"/>
-  <rect x="200" y="0" width="40" height="30" fill="#DDDDDD"/>
-</svg>
+```
+#BBCCEE  #CCEEFF  #CCDDAA  #EEEEBB  #FFCCCC  #DDDDDD
+```
 
 #### **wong** - Wong color scheme (8 colors)
-<svg width="320" height="30">
-  <rect x="0" y="0" width="40" height="30" fill="#000000"/>
-  <rect x="40" y="0" width="40" height="30" fill="#E69F00"/>
-  <rect x="80" y="0" width="40" height="30" fill="#56B4E9"/>
-  <rect x="120" y="0" width="40" height="30" fill="#009E73"/>
-  <rect x="160" y="0" width="40" height="30" fill="#F0E442"/>
-  <rect x="200" y="0" width="40" height="30" fill="#0072B2"/>
-  <rect x="240" y="0" width="40" height="30" fill="#D55E00"/>
-  <rect x="280" y="0" width="40" height="30" fill="#CC79A7"/>
-</svg>
+```
+#000000  #E69F00  #56B4E9  #009E73  #F0E442  #0072B2  #D55E00  #CC79A7
+```
 
 ### Import and Usage
 
