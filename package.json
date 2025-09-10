@@ -39,7 +39,8 @@
   "scripts": {
     "test": "",
     "test:unit": "",
-    "build": "npm run bundle && npm run types",
+    "build": "npm run bundle && npm run types && npm run previews",
+    "previews": "tsx scripts/generate-color-previews.ts",
     "bundle": "rollup -c",
     "lint": "eslint src",
     "types": "tsc -p tsconfig.json --emitDeclarationOnly",
@@ -80,6 +81,7 @@
     "eslint": "^8.57.0",
     "rollup": "^2.56.3",
     "rollup-plugin-terser": "^7.0.2",
+    "tsx": "4.20.5",
     "typescript": "5.4.3"
   },
   "eslintConfig": {

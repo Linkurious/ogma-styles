@@ -123,17 +123,21 @@ The package includes a collection of carefully selected color palettes for data 
 ### Available Color Schemes
 
 #### **categorical** - 9 distinct colors for basic categorical data
+![categorical palette](./assets/categorical-palette.svg)
 ```
-#44AA99  #FFCB2F  #FF7523  #FF9AAC  #80E5CA  #0099FF  #1450DD  #9386CE  #617083
+#44AA99  #FFCB2F  #FF7523  #FF9AAC  #80E5CA  #0099FF  #1450DD  #9386CE
+#617083
 ```
 
 #### **categorical16** - 16 colors for larger categorical datasets
+![categorical16 palette](./assets/categorical16-palette.svg)
 ```
 #44AA99  #FFCB2F  #FF7523  #FF9AAC  #80E5CA  #0099FF  #1450DD  #9386CE
 #617083  #E74C3C  #2ECC71  #F39C12  #8E44AD  #34495E  #16A085  #D35400
 ```
 
 #### **categorical24** - 24 colors for extensive categorical data
+![categorical24 palette](./assets/categorical24-palette.svg)
 ```
 #44AA99  #FFCB2F  #FF7523  #FF9AAC  #80E5CA  #0099FF  #1450DD  #9386CE
 #617083  #E74C3C  #2ECC71  #F39C12  #8E44AD  #34495E  #16A085  #D35400
@@ -141,36 +145,44 @@ The package includes a collection of carefully selected color palettes for data 
 ```
 
 #### **contrastLight** - Paul Tol's bright color scheme (7 colors)
+![contrastLight palette](./assets/contrastLight-palette.svg)
 ```
 #4477AA  #66CCEE  #228833  #CCBB44  #EE6677  #AA3377  #BBBBBB
 ```
 
 #### **highContrast** - Paul Tol's high-contrast scheme (4 colors)
+![highContrast palette](./assets/highContrast-palette.svg)
 ```
 #DDAA33  #BB5566  #004488  #000000
 ```
 
 #### **vibrant** - Paul Tol's vibrant color scheme (7 colors)
+![vibrant palette](./assets/vibrant-palette.svg)
 ```
 #0077BB  #33BBEE  #009988  #EE7733  #CC3311  #EE3377  #BBBBBB
 ```
 
 #### **muted** - Paul Tol's muted color scheme (9 colors)
+![muted palette](./assets/muted-palette.svg)
 ```
-#332288  #88CCEE  #44AA99  #117733  #999933  #DDCC77  #CC6677  #882255  #AA4499
+#332288  #88CCEE  #44AA99  #117733  #999933  #DDCC77  #CC6677  #882255
+#AA4499
 ```
 
 #### **mediumContrast** - Paul Tol's medium contrast scheme (7 colors)
+![mediumContrast palette](./assets/mediumContrast-palette.svg)
 ```
 #EECC66  #EE99AA  #6699CC  #997700  #994455  #004488  #000000
 ```
 
 #### **pale** - Paul Tol's pale color scheme (6 colors)
+![pale palette](./assets/pale-palette.svg)
 ```
 #BBCCEE  #CCEEFF  #CCDDAA  #EEEEBB  #FFCCCC  #DDDDDD
 ```
 
 #### **wong** - Wong color scheme (8 colors)
+![wong palette](./assets/wong-palette.svg)
 ```
 #000000  #E69F00  #56B4E9  #009E73  #F0E442  #0072B2  #D55E00  #CC79A7
 ```
