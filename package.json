@@ -1,6 +1,6 @@
 {
   "name": "@linkurious/ogma-styles",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Ogma styling themes",
   "main": "dist/index.mjs",
   "browser": "dist/index.js",
@@ -29,6 +29,11 @@
       "types": "./dist/morning-breeze.d.ts",
       "import": "./dist/morning-breeze.mjs",
       "require": "./dist/morning-breeze.js"
+    },
+    "./colors": {
+      "types": "./dist/colors.d.ts",
+      "import": "./dist/colors.mjs",
+      "require": "./dist/colors.js"
     }
   },
   "scripts": {

@@ -1,4 +1,4 @@
-import { Theme as OgmaTheme } from '@linkurious/ogma';
+import { Theme as OgmaTheme, Color } from '@linkurious/ogma';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export declare interface Theme<ND = any, ED = any> extends OgmaTheme<ND, ED> {
@@ -8,3 +8,5 @@ export declare interface Theme<ND = any, ED = any> extends OgmaTheme<ND, ED> {
 export declare type ThemeFactory<ND, ED> = (
   ...args: unknown[]
 ) => Theme<ND, ED>;
+
+export { Color };
