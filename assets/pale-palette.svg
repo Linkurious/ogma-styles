@@ -1,0 +1,8 @@
+<svg width="240" height="30" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="40" height="30" fill="#BBCCEE"/>
+  <rect x="40" y="0" width="40" height="30" fill="#CCEEFF"/>
+  <rect x="80" y="0" width="40" height="30" fill="#CCDDAA"/>
+  <rect x="120" y="0" width="40" height="30" fill="#EEEEBB"/>
+  <rect x="160" y="0" width="40" height="30" fill="#FFCCCC"/>
+  <rect x="200" y="0" width="40" height="30" fill="#DDDDDD"/>
+</svg>

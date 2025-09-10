@@ -62,6 +62,28 @@ export default [
     plugins
   },
   {
+    input: 'src/colors.ts',
+    output: {
+      file: 'dist/colors.mjs',
+      banner,
+      format: 'esm',
+      name: toCamelCase(name),
+      sourcemap: true
+    },
+    plugins
+  },
+  {
+    input: 'src/colors.ts',
+    output: {
+      file: 'dist/colors.js',
+      banner,
+      format: 'umd',
+      name: toCamelCase(name),
+      sourcemap: true
+    },
+    plugins
+  },
+  {
     input: 'src/index.ts',
     output: {
       file: main,
