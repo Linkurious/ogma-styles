@@ -122,7 +122,7 @@ The package includes a collection of carefully selected color palettes for data 
 
 ### Available Color Schemes
 
-#### **`categorical`** - 9 distinct colors for basic categorical data
+#### **`categorical`** - 9 distinct **accessible** colors for basic categorical data
 
 ![categorical palette](./assets/categorical-palette.svg)
 
