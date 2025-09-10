@@ -91,15 +91,6 @@ function main() {
       description: getPaletteDescription(name, colors.length)
     });
   });
-
-  // Generate README section
-  console.log('\n📝 Generating README section...\n');
-
-  console.log(`📄 README section saved to scripts/readme-color-section.txt`);
-  console.log(`\\n🎉 Done! Generated ${generatedFiles.length} SVG previews`);
-  console.log('\\nNext steps:');
-  console.log('1. Copy the content from scripts/readme-color-section.txt');
-  console.log('2. Replace the "Available Color Schemes" section in README.md');
 }
 
 main();
