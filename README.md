@@ -6,6 +6,24 @@ This is a repositiory of style presets for [Ogma graph visualisation library](ht
 
 [Demo](https://doc.linkurio.us/ogma/latest/examples/set-theme.html)
 
+## Table of Contents
+
+- [How to use](#how-to-use)
+  - [Install](#install)
+  - [Usage](#usage)
+- **Themes:**
+  - ["Midsummer night" theme](#midsummer-night-theme)
+    - [Additional variables](#additional-variables)
+    - [Color palette](#color-palette)
+    - [Compose your own style](#compose-your-own-style)
+  - ["Afternoon nap" theme](#afternoon-nap-theme)
+  - ["Morning breeze" theme](#morning-breeze-theme)
+- [Color Schemes](#color-schemes)
+  - [Available Color Schemes](#available-color-schemes)
+  - [Import and Usage](#import-and-usage)
+  - [Color Scheme Characteristics](#color-scheme-characteristics)
+- [Copyright](#copyright)
+
 ## How to use
 
 ### Install
