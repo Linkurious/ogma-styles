@@ -48,7 +48,7 @@ Alternatively, you can use the CDN-hosted version
 ### Usage
 
 ```ts
-import Ogma from '@linkurious/ogma';
+import { Ogma } from '@linkurious/ogma';
 import { midsummerNight as theme } from '@linkurious/ogma-styles'
 
 const ogma = new Ogma({ ... });
@@ -60,7 +60,7 @@ ogma.styles.setTheme(theme);
 ![Midsummer night](https://user-images.githubusercontent.com/26884/131863840-5d462e5d-3bc4-4bc2-9eea-50150d40ffa5.png)
 
 ```ts
-import Ogma from '@linkurious/ogma';
+import { Ogma } from '@linkurious/ogma';
 import { midsummerNight as theme } from '@linkurious/ogma-styles'
 
 const ogma = new Ogma({
@@ -102,7 +102,7 @@ If you want to share it, send us a pull request and we will check and publish it
 ![Afternoon nap with badges](https://user-images.githubusercontent.com/26884/132239390-7abf79ef-f9ad-4c8d-bf1a-3129b4739a33.png)
 
 ```ts
-import Ogma from '@linkurious/ogma';
+import { Ogma } from '@linkurious/ogma';
 import { afternoonNap as theme } from '@linkurious/ogma-styles'
 
 const ogma = new Ogma({
@@ -121,7 +121,7 @@ console.log(theme.colors.nodeHaloWidth); // 40
 ![Midsummer night with halos](https://user-images.githubusercontent.com/26884/132235200-b680e329-c238-4e2c-b099-44a78e1f7857.png)
 
 ```ts
-import Ogma from '@linkurious/ogma';
+import { Ogma } from '@linkurious/ogma';
 import { morningBreeze as theme } from '@linkurious/ogma-styles'
 
 const ogma = new Ogma({
