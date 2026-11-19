@@ -42,11 +42,13 @@
     "build": "npm run bundle && npm run types && npm run previews",
     "previews": "tsx scripts/generate-color-previews.ts",
     "bundle": "rollup -c",
-    "lint": "eslint src",
+    "lint": "oxlint ./src/ ./scripts/",
     "types": "tsc -p tsconfig.json --emitDeclarationOnly",
-    "lint:ci": "eslint -f checkstyle -o reports/checkstyle.xml src/*.ts",
+    "lint:ci": "mkdir -p reports && oxlint -f checkstyle ./src/ ./scripts/ > reports/checkstyle.xml",
     "postversion": "sync_versions",
-    "bump:patch": "npm version --no-git-tag-version patch"
+    "bump:patch": "npm version --no-git-tag-version patch",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
   },
   "repository": {
     "type": "git",
@@ -68,30 +70,27 @@
   },
   "homepage": "https://github.com/Linkurious/ogma-styles#readme",
   "optionalDependencies": {
-    "@linkurious/ogma": "^4.0.0 || ^5.0.0"
+    "@linkurious/ogma": ">=4.0.0"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.14.5",
+    "@babel/preset-typescript": "7.28.5",
     "@linkurious/code-tools": "0.0.15",
-    "@linkurious/eslint-config-ogma": "^1.0.10",
-    "@rollup/plugin-commonjs": "^19.0.0",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.0.0",
-    "@rollup/plugin-typescript": "^8.2.5",
-    "eslint": "^8.57.0",
-    "rollup": "^2.56.3",
-    "rollup-plugin-terser": "^7.0.2",
+    "@linkurious/eslint-config-ogma": "2.1.0",
+    "@rollup/plugin-commonjs": "19.0.2",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "13.3.0",
+    "@rollup/plugin-typescript": "8.5.0",
+    "oxfmt": "0.65.0",
+    "oxlint": "1.57.0",
+    "pre-commit": "1.2.2",
+    "rollup": "2.79.2",
+    "rollup-plugin-terser": "7.0.2",
+    "tslib": "2.9.1",
     "tsx": "4.20.5",
     "typescript": "5.4.3"
   },
-  "eslintConfig": {
-    "extends": [
-      "@linkurious/eslint-config-ogma"
-    ]
-  },
-  "prettier": {
-    "trailingComma": "none",
-    "singleQuote": true,
-    "arrowParens": "avoid"
-  }
+  "pre-commit": [
+    "lint",
+    "format:check"
+  ]
 }
